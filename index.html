@@ -1,0 +1,760 @@
+    <!DOCTYPE html>
+    <html lang="fr">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Portfolio de Arthur Sicard, étudiant en informatique à l'ISEN Rennes.">
+        <meta name="author" content="Arthur Sicard">
+    
+        <title>Portfolio - Arthur Sicard</title>
+    	<link rel="icon" type="image/png" href="img/icoBalise.png" />
+        <!-- Bootstrap Core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    
+        <!-- Custom Fonts -->
+        <link href="vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css">
+    
+        <!-- Plugin CSS -->
+        <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+    
+        <!-- Theme CSS -->
+        <link href="css/creative.css" rel="stylesheet">
+        <script language="javascript">
+		var currentPage = 1;
+		var nbPage = 3;
+		function switchTo(cible){
+			document.getElementById('page'+currentPage.toString()).style.display = 'none';
+			document.getElementById('bp'+currentPage.toString()).className = '';
+			
+			document.getElementById('page'+cible.toString()).style.display = 'block';
+			document.getElementById('bp'+cible.toString()).className = 'active';
+			
+			currentPage = cible;
+		}
+		
+		function switchPage(type){
+			
+			document.getElementById('page'+currentPage.toString()).style.display = 'none';
+			document.getElementById('bp'+currentPage.toString()).className = '';
+			
+			
+			
+			if(currentPage == 1 	 && type == -1){
+				currentPage = nbPage;
+			}
+			else{
+				if(currentPage >= 1 && currentPage < nbPage && type == 1){
+					currentPage++;
+				}
+				else{
+					if(currentPage >= nbPage && type == 1){
+						currentPage = 1;
+					}
+					else{
+						if(currentPage <= nbPage && currentPage > 1 && type == -1){
+							currentPage--;
+						}
+					}
+				}
+			}
+			document.getElementById('page'+currentPage.toString()).style.display = 'block';
+			document.getElementById('bp'+currentPage.toString()).className = 'active';
+		}
+			
+        </script>
+    </head>
+    
+    <body id="page-top">
+    
+        <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="#page-top">Arthur Sicard</a>
+                </div>
+    
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a class="page-scroll" href="#presentation">Presentation</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#services">Competences</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#about">Cursus</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#passion">Passions</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    
+        <header>
+            <div class="header-content">
+                <div class="header-content-inner">
+                    <h1 id="homeHeading">Arthur Sicard - Etudiant ISEN</h1>
+                    <hr>
+                    <p>Etudiant en informatique, programmation et reseaux, passioné par les nouvelles technologies et la photographie. </p>
+                    <a href="#presentation" class="btn btn-primary btn-xl page-scroll">En decouvrir plus tout de suite !</a>
+                </div>
+            </div>
+        </header>
+    
+        <section class="bg-primary" id="presentation">
+            <!-- First Featurette -->
+            <div class="featurette container">
+                <img class="featurette-image img-circle img-responsive pull-right" src="img/team/arthur.jpg" alt="photo Arthur Sicard">
+                <h2 class="featurette-heading">L’Inventivit&eacute; <span class="text-muted2">n’a pour limite que</span> la Créativit&eacute;.</h2>
+                <p class="lead">Actuellement en 2e année de Cycle Informatique et Réseaux à l’ISEN Rennes.<br>
+                Je cherche &agrave; appliquer mes compétences au travers d'un Stage en developpement (Web, C++...) ainsi qu'une alternance dans les m&ecirc;mes domaines d'activit&eacute;s.</p>
+                <i class="fa fa-3x fa-linkedin-square fa-lien" aria-hidden="true" onClick="window.open('https://www.linkedin.com/in/arthur-sicard-311651138','_blank')"></i>
+                <i class="fa fa-3x fa-github-square fa-lien" aria-hidden="true" onClick="window.open('https://github.com/art35rennes','_blank')"></i>
+          </div>
+        </section>
+        
+        <!-- Competence -->
+        <section id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Mes Comp&eacute;tences :</h2>
+                        <hr class="primary">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                  <div class="col-md-6 text-center col-lg-4">
+                        <div class="service-box">
+                            <a class="page-scroll" href="#portfolio">
+                            	<i class="fa fa-5x fa-diamond text-primary sr-icons" ></i>
+                            </a>
+                            <h3>Langages proc&eacute;duraux et orient&eacute;s objets</h3>
+                            <p class="text-muted">C, C++, Python, Java.</p>
+                        </div>
+                    </div>
+                  <div class="col-md-6 text-center col-lg-4">
+                        <div class="service-box">
+                        	<a class="page-scroll" href="#portfolio">
+                            	<i class="fa fa-5x fa-newspaper-o text-primary sr-icons"></i>
+                            </a>
+                            <h3>R&eacute;seaux et programmation Web</h3>
+                            <p class="text-muted">HTML&nbsp;5, CSS&nbsp;3, JavaScript, Ajax, PHP, CCNA&nbsp;1, CCNA&nbsp;2.</p>
+                        </div>
+                    </div>
+                  <div class="col-md-6 text-center col-lg-4">
+                        <div class="service-box">
+                        	<a class="page-scroll" href="#portfolio">
+                            	<i class="fa fa-5x fa-users text-primary sr-icons"></i>
+                            </a>
+                            <h3>Gestion de projet</h3>
+                            <p class="text-muted">Analyse&nbsp;fonctionnelle, Cahier&nbsp;des&nbsp;charges, Planning&nbsp;pr&eacute;visionnel.</p>
+                        </div>
+                    </div>
+              </div>
+              <div class="row">
+                    <div class="col-md-6 text-center col-lg-4">
+                        <div class="service-box">
+                            <a class="page-scroll" href="#portfolio">	
+                                <i class="fa fa-5x fa-database text-primary sr-icons"></i>
+                            </a>
+                            <h3>Administration syst&egrave;me et base de donn&eacute;es</h3>
+                            <p class="text-muted">Windows, Linux, Serveur&nbsp;Apache, MySQL, MCD/MPD.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center col-lg-4">
+                        <div class="service-box">
+                        	<a class="page-scroll" href="#portfolio">
+                            	<i class="fa fa-5x fa-cogs text-primary sr-icons"></i>
+                            </a>
+                            <h3>Logiciels et applications</h3>
+                            <p class="text-muted">Pack&nbsp;Office, Suite&nbsp;Adobe, Windows&nbsp;Essential, Power&nbsp;AMC.</p>
+                        </div>
+                    </div>
+                     <div class="col-md-6 text-center col-lg-4">
+                        <div class="service-box">
+                        	<a class="page-scroll" href="#portfolio">
+                            	<i class="fa fa-5x fa-hdd-o text-primary sr-icons"></i>
+                            </a>
+                            <h3>Hardware</h3>
+                            <p class="text-muted">Assemblage, maintenance et réparation d'ordinateur fixe et portable...<br>Arduino</p>
+                        </div>
+                    </div>
+				</div>
+            </div>
+        </section>
+        
+        <!-- Logiciel Aside -->
+        <aside class="clients">
+            <div class="container">
+                <div class="row">
+                     <div class="col-md-3 col-sm-6 col-lg-2">
+                        <a href="https://www.office.com/" target="_blank">
+                            <img src="img/logos/noirblanc/officeNB.jpg" class="img-responsive img-centered" alt="logo office noir et blanc">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-lg-3">
+                        <a href="https://www.microsoft.com/fr-fr/windows" target="_blank">
+                            <img src="img/logos/noirblanc/windowsNB.jpg" class="img-responsive img-centered" alt="logo windows noir et blanc">
+                        </a>
+                    </div>
+                     <div class="col-md-3 col-sm-6 col-lg-2">
+                        <a href="http://www.adobe.com/fr/creativecloud.html" target="_blank">
+                            <img src="img/logos/noirblanc/adobeNB.png" class="img-responsive img-centered" alt="logo adobe  noir et blanc">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-lg-2">
+                        <a href="http://www.powerdesigner.biz/FR/powerdesigner/powerdesigner-features.html" target="_blank">
+                        <img src="img/logos/noirblanc/poweramcNB.jpg" class="img-responsive img-centered" alt="logo power amc  noir et blanc">
+                        </a>
+                    </div>
+                     <div class="col-md-3 col-sm-6 col-lg-3">
+                        <a href="http://www.apache.org/" target="_blank">
+                       <img src="img/logos/noirblanc/apacheNB.jpg" class="img-responsive img-centered" alt="logo apache  noir et blanc">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-lg-1">
+                         <a href="https://fr.wikipedia.org/wiki/C_(langage)" target="_blank">
+                     <img src="img/logos/noirblanc/cNB.jpg" class="img-responsive img-centered" alt="logo langage C  noir et blanc">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-lg-1">
+                             <a href="https://fr.wikipedia.org/wiki/C%2B%2B" target="_blank">
+                   <img src="img/logos/noirblanc/cppNB.jpg" class="img-responsive img-centered" alt="logo langage C++  noir et blanc">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-lg-1">
+                           <a href="https://www.python.org/" target="_blank">
+                     <img src="img/logos/noirblanc/pythonNB.jpg" class="img-responsive img-centered" alt="logo python  noir et blanc">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-lg-1">
+                           <a href="http://www.cisco.com/c/fr_fr/index.html" target="_blank">
+                   <img src="img/logos/noirblanc/ciscoNB.jpg" class="img-responsive img-centered" alt="logo CCNA  noir et blanc">
+                        </a>
+                    </div>
+                  <div class="col-md-3 col-sm-6 col-lg-1">
+                             <a href="https://fr.wikipedia.org/wiki/Linux" target="_blank">
+                   <img src="img/logos/noirblanc/linuxNB.jpg" class="img-responsive img-centered" alt="logo linux  noir et blanc">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-lg-1">
+                             <a href="https://secure.php.net/" target="_blank">
+                   <img src="img/logos/noirblanc/phpNB.jpg" class="img-responsive img-centered" alt="logo php  noir et blanc">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-lg-2">
+                             <a href="https://www.mysql.fr/" target="_blank">
+                   <img src="img/logos/noirblanc/mysqlNB.jpg" class="img-responsive img-centered" alt="logo mysql  noir et blanc">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-lg-1">
+                             <a href="http://www.w3schools.com/" target="_blank">
+                   <img src="img/logos/noirblanc/html5NB.jpg" class="img-responsive img-centered" alt="logo html5  noir et blanc">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-lg-1">
+                             <a href="http://www.w3schools.com/" target="_blank">
+                       <img src="img/logos/noirblanc/css3NB.jpg" class="img-responsive img-centered" alt="logo css3  noir et blanc">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-lg-1">
+                             <a href="http://www.w3schools.com/" target="_blank">
+                       <img src="img/logos/noirblanc/jsNB.jpg" class="img-responsive img-centered" alt="logo js  noir et blanc">
+                        </a>
+                    </div>
+                    
+                    <div class="col-md-3 col-sm-6 col-lg-1">
+                        <a href="https://fr.wikipedia.org/wiki/Ajax_(informatique)" target="_blank">
+                            <img src="img/logos/noirblanc/ajaxNB.jpg" class="img-responsive img-centered" alt="logo ajax  noir et blanc">
+                        </a>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-lg-1">
+                        <a href="https://fr.wikipedia.org/wiki/Java_(langage)" target="_blank">
+                            <img src="img/logos/noirblanc/javaNB.png" class="img-responsive img-centered" alt="logo ajax  noir et blanc">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        
+        <!-- Realisation -->
+        <section id="portfolio">
+             <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h2 class="section-heading">Mes R&eacute;alisations :</h2>
+                            <hr class="primary">
+                        </div>
+                    </div>
+                </div>
+                
+            <div class="container" id="page1">
+            <!-- /.row -->
+
+              <!-- Projects 1 Robot pompier-->
+              <div class="row">
+                  <div class="col-md-7">
+                      <img class="img-responsive" src="img/portfolio/fullsize/projetC.jpg" alt="illustration projet robot pompier">
+                  </div>
+                  <div class="col-md-5">
+                      <h3>Projet du Robot Pompier</h3>
+                      <h4>Langage : C<br>R&ocirc;le : D&eacute;veloppeur</h4>
+                      <p>Le but de ce projet était de développer un programme  permettant au robot d'aller chercher un extincteur à une position connue. Pour  ensuite, aller éteindre un feu à une position, elle, inconnue.<br>
+                      Le Robot devait trouver le chemin le plus cours en prenant en compte les obstacles  et murs liées à la carte, et tout cela sans mourir en traversant le feu éventuellement  rencontré.</p>
+  <i id="Git1" class="fa fa-3x fa-github sr-icons text-primary" aria-hidden="true" onClick="window.open('https://github.com/art35rennes/Projet-Robot-Pompier', '_blank')"></i>
+                      <!--i id="YT1" class="fa fa-3x fa-youtube-play sr-icons text-primary" aria-hidden="true" onClick="window.open('https://github.com/art35rennes/Projet-Robot-Pompier', '_blank')"></i-->
+                      <!--a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a-->
+                  </div>
+              </div>
+              <!-- /.row -->
+      
+              <hr>
+      
+              <!-- Project 2 Pong-->
+              <div class="row">
+                  <div class="col-md-7">
+                          <img class="img-responsive" src="img/portfolio/fullsize/pong.jpg" alt="illustration pong">
+                  </div>
+                  <div class="col-md-5">
+                      <h3>Jeu de Pong</h3>
+                      <h4>Langage : C++<br>R&ocirc;le : D&eacute;veloppeur</h4>
+                      <p>Le but de ce projet était de se familiariser avec le langage C++ ainsi que la biblioth&egrave;que Qt, mais aussi de produire un jeu de Pong am&eacute;lior&eacute;. J'ai donc ajouté une IA (Intelligence Artificielle).<br>Le jeu est jouable &agrave; 2 sur un même PC ou alors seul contre l'IA.</p>
+                      <i class="fa fa-3x fa-github sr-icons text-primary" aria-hidden="true" onClick="window.open('https://github.com/art35rennes/jeu-de-pong', '_blank')"></i>
+                      <!--i class="fa fa-3x fa-youtube-play sr-icons text-primary" aria-hidden="true" onClick="window.open('https://github.com/art35rennes/Projet-Robot-Pompier', '_blank')"></i-->
+                      <!--a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a-->
+                  </div>
+              </div>
+              <!-- /.row -->
+      
+              <hr>
+      
+              <!-- Project 3 Web vitrine-->
+              <div class="row">
+                  <div class="col-md-7">
+                          <img class="img-responsive" src="img/portfolio/fullsize/TransportMyMind.png" alt="illustration  site web">
+                  </div>
+                  <div class="col-md-5">
+                      <h3>Site Web vitrine</h3>
+                      <h4>Langage : HTML 5 / CSS 3 / JavaScript<br>R&ocirc;le : D&eacute;veloppeur/Designer</h4>
+                      <p>A plusieurs reprises j'ai contribu&eacute; à la r&eacute;alisation de site web en groupe. J'ai participé à l'élaboration des sites en amont ainsi qu'à leur d&eacute;veloppement par la suite.
+                      <br>
+                      Le premier projet consistait à cr&eacute;er une page d'accueil pour un site de E-commerce sur laquelle étaient pr&eacute;sentés diff&egrave;rents produits.
+                      <br>
+                      Dans le second, il s'agissait de r&eacute;aliser un site complet en fran&ccedil;ais et anglais pour une Startup fictive.</p>
+                      <i class="fa fa-3x fa-github sr-icons text-primary" aria-hidden="true" onClick="window.open('https://github.com/art35rennes/Site-vitrine', '_blank')"></i>
+                      <!--i class="fa fa-3x fa-desktop sr-icons text-primary" aria-hidden="true" onClick="window.open('https://github.com/art35rennes/Projet-Robot-Pompier', '_blank')"></i-->
+                      <!--a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a-->
+                  </div>
+              </div>
+              <!-- /.row -->
+      
+              <hr>
+      
+              <!-- Project 4 BAtaille Navale-->
+              <div class="row">
+      
+                  <div class="col-md-7">
+                          <img class="img-responsive" src="img/portfolio/fullsize/bataille.png" alt="illustration  bataille navale">
+                  </div>
+                  <div class="col-md-5">
+                      <h3>Bataille Navale</h3>
+                      <h4>Langage : Python<br>R&ocirc;le : D&eacute;veloppeur/Graphiste</h4>
+                      <p>Ce projet a été r&eacute;alisé en groupe dans le cadre de l'épreuve du BAC de la mati&egrave;re ISN en Terminale. Nous avons choisi avec un ami de r&eacute;aliser une bataille navale en multijoueur, ainsi que contre 3 niveaux d'IA. Dans ce projet, je me suis chargé de d&eacute;velopper les 3 IA. 2 sont bas&eacute;es sur le hasard tandis que la troisi&egrave;me agit comme un vrai joueur. Je me suis aussi occupé de la partie r&eacute;seau, du design des navires ainsi que d'autres aspects du programme.</p>
+                      <i class="fa fa-3x fa-github sr-icons text-primary" aria-hidden="true" onClick="window.open('https://github.com/art35rennes/Bataille-navale', '_blank')"></i>
+                      <i class="fa fa-3x fa-youtube-play sr-icons text-primary" aria-hidden="true" onClick="window.open('https://youtu.be/yC4XebMQLEQ', '_blank')"></i>
+                      <!--a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a-->
+                  </div>
+              </div>
+              <!-- /.row -->
+      		</div>
+           	<div class="container" id="page2">
+      		
+              <!-- Project 6 service tracker-->
+              <div class="row">
+                  <div class="col-md-7">
+                          <img class="img-responsive" src="img/portfolio/fullsize/servicetracker.jpg" alt="illustration service tracker">
+                  </div>
+                <div class="col-md-5">
+                      <h3>Logiciel de suivi d'état d'un service</h3>
+                  <h4>Langage : Python<br>R&ocirc;le : Developpeur</h4>
+                    <p>Suite à une demande d'un administrateur réseau, j'ai réalisé un prototype de logiciel permettant de suivre l'état d'un service. D'informer simultanément un grand nombre de clients de l'état de ce service. Cela se fait via un ic&ocirc;ne dans la barre des tâches près de l'horloge. Le logiciel se base sur une architecture client/serveur. Chaque client peut suivre jusqu'à 6 services repartis sur un ou plusieurs serveurs. Chaque serveur peut quant à lui gérer l'actualisation de 6 services maximum.</p>
+                    <!--a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a-->
+                  </div>
+              </div>
+              
+              <hr>
+              
+              <!-- Project 5 echec ra-->
+              <div class="row">
+                  <div class="col-md-7">
+                          <img class="img-responsive" src="img/portfolio/fullsize/RA.jpg" alt="illustration  echec RA">
+                  </div>
+                <div class="col-md-5">
+                      <h3>&Eacute;chec en r&eacute;alité augment&eacute;e</h3>
+                  <h4>Langage : Unity / Vuforia / C#<br>R&ocirc;le : Developpeur</h4>
+                    <p>Dans le cadre d'un des projets du Club Info de l'ISEN Rennes, j'ai mis en place un logiciel de r&eacute;alité augment&eacute;e à l'aide de Vuforia, une bibliothèque de Unity (moteur de jeu vid&eacute;o notamment). Le but de ce projet est de r&eacute;aliser un scanne 3D des él&egrave;ves et enseignants de l'ISEN Rennes afin d'incruster leur bustes sur les pi&egrave;ces d'échecs r&eacute;alisées avec Blender.<br>
+                      Nous sommes actuellement capables de suivre les 32 cartes qui permettent de jouer au jeu et d'y placer les pi&egrave;ces d'échec correspondantes.</p>
+                    <i class="fa fa-3x fa-github sr-icons text-primary" aria-hidden="true" onClick="window.open('https://github.com/art35rennes/Echec-realite-augmentee-', '_blank')"></i>
+                    <!--i class="fa fa-3x fa-youtube-play sr-icons text-primary" aria-hidden="true" onClick="window.open('https://github.com/art35rennes/Projet-Robot-Pompier', '_blank')"></i-->
+                    <!--a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a-->
+                  </div>
+              </div>
+              
+              <hr>
+                           
+              <!-- Project 7 init 3d-->
+              <div class="row">
+                  <div class="col-md-7">
+                          <img class="img-responsive" src="img/portfolio/fullsize/tasse.jpg" alt="illustration tasse 3D">
+                  </div>
+                <div class="col-md-5">
+                      <h3>Initiation 3D</h3>
+                  <h4>Outil : Blender<br>R&ocirc;le : Organisation</h4>
+                    <p>Parmit les projets organisés par la Club Info Rennes, nous avons mis en place des initiations afin d'enseigner les bases de la modélisation 3D aux étudiants et enseignants qui le souhaitaient.</p>
+                    <!--a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a-->
+                  </div>
+              </div>
+              
+              <hr>
+              
+              <!-- Project 8 modelisation-->
+              <div class="row">
+                  <div class="col-md-7">
+                          <img class="img-responsive" src="img/portfolio/fullsize/modelisation.jpg" alt="illustration tasse 3D">
+                  </div>
+                <div class="col-md-5">
+                      <h3>Mod&eacute;lisation 3D</h3>
+                  <h4>Outil : SDK Kinect / Blender<br>R&ocirc;le : Organisation / Réalisation</h4>
+                    <p>Dans le cadre du projet d'échec en réalité augmentée nous avons commencé à modéliser des personnes afin de créer les pièces d'échecs par la suite.</p>
+                    <!--a class="btn btn-primary" href="#">View Project <span class="glyphicon glyphicon-chevron-right"></span></a-->
+                  </div>
+              </div>
+            
+            </div>
+            <div class="container" id="page3">
+      
+              <!-- Project 9 -->
+              <div class="row">
+                  <div class="col-md-7">
+                          <img class="img-responsive" src="img/portfolio/fullsize/workinprogress.jpg" alt="work in progress">
+                  </div>
+                <div class="col-md-5">
+                      <h3>Site E-Commerce</h3>
+                  <h4>Langage : HTML 5 / CSS 3 / JavaScript / PhP / MySQL<br>R&ocirc;le : Designer / Developpeur</h4>
+                    <p>Dans le cadre du cours de PHP nous devons réaliser en groupe un site complet utilisant toutes les connaissances Web accumulé jusqu'à présent.
+                  <br>Le projet débutera fin Février.</p>
+                    <!--i class="fa fa-3x fa-github sr-icons text-primary" aria-hidden="true" onClick="window.open('https://github.com/art35rennes/Echec-realite-augmentee-', '_blank')"></i-->
+                    <!--i class="fa fa-3x fa-youtube-play sr-icons text-primary" aria-hidden="true" onClick="window.open('https://github.com/art35rennes/Projet-Robot-Pompier', '_blank')"></i-->
+                  </div>
+              </div>
+              <hr>
+               <!-- Project 10 -->
+              <div class="row">
+                  <div class="col-md-7">
+                          <img class="img-responsive" src="img/portfolio/fullsize/workinprogress.jpg" alt="work in progress">
+                  </div>
+                <div class="col-md-5">
+                      <h3>Jeu de plateforme</h3>
+                  <h4>Langage : C++<br>R&ocirc;le : Designer / Developpeur</h4>
+                    <p>Dans le cadre du cours de C++ je doit réaliser un jeu de plateforme type Mario.<br> En plus d'intégrer des ennemis et éléments de décors dynamique je compte ajouter un mode coop/speed run à mon jeu.
+                  <br>Le projet débutera début Mars</p>
+                    <!--i class="fa fa-3x fa-github sr-icons text-primary" aria-hidden="true" onClick="window.open('https://github.com/art35rennes/Echec-realite-augmentee-', '_blank')"></i-->
+                    <!--i class="fa fa-3x fa-youtube-play sr-icons text-primary" aria-hidden="true" onClick="window.open('https://github.com/art35rennes/Projet-Robot-Pompier', '_blank')"></i-->
+                  </div>
+              </div>
+              <hr>
+              <!-- Project 11-->
+              <div class="row">
+                  <div class="col-md-7">
+                          <img class="img-responsive" src="img/portfolio/fullsize/robot.jpg" alt="work in progress">
+                  </div>
+                <div class="col-md-5">
+                      <h3>Robot Arduino</h3>
+                  <h4>Langage : Arduino<br>R&ocirc;le : Developpeur</h4>
+                    <p>A la suite du cours de Science de l'l'Ingénieur, j'ai eu l'occasion de programmer different robot basé sur des cartes arduino.
+                  <br>- A gauche, un robot télécommandé via bluetooth qui peut se déplacer en crabe.<br>- Au milieu, un robot motorisé  équipé de chenille.<br>- A droite, un robot suiveur de ligne.</p>
+                    <!--i class="fa fa-3x fa-github sr-icons text-primary" aria-hidden="true" onClick="window.open('https://github.com/art35rennes/Echec-realite-augmentee-', '_blank')"></i-->
+                    <!--i class="fa fa-3x fa-youtube-play sr-icons text-primary" aria-hidden="true" onClick="window.open('https://github.com/art35rennes/Projet-Robot-Pompier', '_blank')"></i-->
+                  </div>
+              </div>
+              
+            </div>
+            
+            <!-- Pagination -->
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <ul class="pagination">
+                    <li>
+                        <a onClick="switchPage(-1)" href="#portfolio" class="page-scroll">&laquo;</a>
+                    </li>
+                    <li class="active" id="bp1">
+                        <a onClick="switchTo(1)" href="#portfolio" class="page-scroll">1</a>
+                    </li>
+                    <li id="bp2">
+                        <a onClick="switchTo(2)" href="#portfolio" class="page-scroll">2</a>
+                    </li>
+                    <li id="bp3">
+                        <a onClick="switchTo(3)" href="#portfolio" class="page-scroll">3</a>
+                    </li>
+                    <li>
+                        <a onClick="switchPage(1)" href="#portfolio" class="page-scroll">&raquo;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.row -->
+    
+        </section>    
+        <!-- Cursus Section -->
+        <section id="about">
+             <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h2 class="section-heading">Cursus :</h2>
+                            <hr class="primary">
+                            <h3 class="section-subheading text-muted">Ma formation et mes exp&eacute;riences professionnelles.</h3>
+                        </div>
+                    </div>
+                <div class="container">
+                
+                <ul class="timeline">
+                    <li>
+                      <div class="timeline-badge"><i class="fa fa-graduation-cap" aria-hidden="true"></i></div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <h4 class="timeline-title">Lyc&eacute;e Jean-Paul II</h4>
+                          <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2012 - 2015</small></p>
+                        </div>
+                        <div class="timeline-body">
+                          <p>Terminal&nbsp;S spécialité&nbsp;SVT option&nbsp;ISN - Mention Assez&nbsp;Bien.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="timeline-inverted">
+                      <div class="timeline-badge warning"><i class="fa fa-university" aria-hidden="true"></i></div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <h4 class="timeline-title">Institut Sup&eacute;rieur de l'Electronique et du Num&eacute;rique</h4>
+                          <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2015 - 2016</small></p>
+                        </div>
+                        <div class="timeline-body">
+                          <p>Cycle Informatique et Réseaux 1e année.<br>
+- Validation  préparation CCNA 1 (90,95%).</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="timeline-inverted">
+                      <div class="timeline-badge success"><i class="fa fa-child" aria-hidden="true"></i></div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <h4 class="timeline-title">B&eacute;n&eacute;vole Emma&uuml;s à Rennes</h4>
+                          <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Toussaint 2015</small></p>
+                        </div>
+                        <div class="timeline-body">
+                          <p>Service Technique - Réparation et préparation de  matériel informatique.</p>
+                          <p>Recyclerie - Récéption et tri des dons.<br>
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                    <div class="timeline-badge info"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <h4 class="timeline-title">Centre commercial E.Leclerc</h4>
+                          <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Juillet - Août 2016</small></p>
+                        </div>
+                        <div class="timeline-body">
+                          <p>Contrat saisonnier.</p>
+                          <p>- Hôte de caisse, rayonnage, préparation commande / livraison (Drive)</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="timeline-inverted">
+                      <div class="timeline-badge warning"><i class="fa fa-university" aria-hidden="true"></i></div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <h4 class="timeline-title">Institut Sup&eacute;rieur de l'Electronique et du Num&eacute;rique</h4>
+                          <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2016 - 2017</small></p>
+                        </div>
+                        <div class="timeline-body">
+                          <p>Cycle Informatique et Réseaux 2e année.<br>
+- Président  du Club Info de l'ISEN Rennes.<br>
+- Ambassadeur  sur les salons et forums lycéens pour l'ISEN.<br>
+- Préparation  du CCNA 2, Cambridge English First et Voltaire</p>
+                          <!--hr>
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
+                              <i class="glyphicon glyphicon-cog"></i> <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                              <li><a href="#">Action</a></li>
+                              <li><a href="#">Another action</a></li>
+                              <li><a href="#">Something else here</a></li>
+                              <li class="divider"></li>
+                              <li><a href="#">Separated link</a></li>
+                            </ul>
+                          </div-->
+                        </div>
+                      </div>
+                    </li>
+                    <li class="timeline-inverted">
+                    <div class="timeline-badge info"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <h4 class="timeline-title">Centre commercial E.Leclerc</h4>
+                          <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Septembre - Novembre 2016</small></p>
+                        </div>
+                        <div class="timeline-body">
+                          <p>Contrat étudiant.</p>
+                          <p>- Hôte de caisse.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="timeline-inverted">
+                      <div class="timeline-badge info"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <h4 class="timeline-title">Centre commercial E.Leclerc</h4>
+                          <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> F&eacute;vrier 2017</small></p>
+                        </div>
+                        <div class="timeline-body">
+                          <p>CDD.</p>
+                          <p>- Hôte de caisse.</p>
+                        </div>
+                      </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+         
+       <!-- Passion Section -->
+        <section id="passion" class="bg-light-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Mes Passions :</h2>
+                        <hr class="primary">
+                        <!--h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3-->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="passion-member">
+                            <img src="img/team/1.jpg" class="img-responsive img-circle" alt="image rue des artistes Rennes">
+                            <h4>Photographies</h4>
+                            <p class="text-muted">Paysage nocturne</p>
+                            <ul class="list-inline social-buttons">
+                                <li><a href="https://drive.google.com/drive/folders/0B_eGQsIrOgv6NWdqVHRnOEU3eUE?usp=sharing" target="_blank"><i class="fa fa-folder-open"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="passion-member">
+                            <img src="img/team/3.jpg" class="img-responsive img-circle" alt="bapteme parapente">
+                            <h4>Sports</h4>
+                            <p class="text-muted">Parapente, handball, tir a l'arc...</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="passion-member">
+                            <img src="img/team/2.jpg" class="img-responsive img-circle" alt="image pc nzxt">
+                            <h4>Informatique et nouvelles technologies</h4>
+                            <p class="text-muted">Hardware et veille num&eacute;rique.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                        <!--p class="large text-muted"></p-->
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+	            <h2 id="h2Form">Pour me contacter : </h2>
+                <h2 class="featurette-heading" style="color:white">arthur.sicard@outlook.fr</h2>
+            <!-- Contact Form -->
+            <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+            
+              <!--<div class="row">
+              <div class="col-md-8">
+                  
+                  <form name="sentMessage" id="contactForm" novalidate>
+                      <div class="control-group form-group">
+                          <div class="controls">
+                              <label>Nom Pr&eacute;nom :</label>
+                              <input type="text" class="form-control" id="name" required data-validation-required-message="Saisissez votre nom s'il vous plait">
+                              <p class="help-block"></p>
+                          </div>
+                      </div>
+                      <div class="control-group form-group">
+                          <div class="controls">
+                              <label>Num&eacute;ro de t&eacute;l&eacute;phone :</label>
+                              <input type="tel" class="form-control" id="phone" required data-validation-required-message="Saisissez votre numero s'il vous plait">
+                          </div>
+                      </div>
+                      <div class="control-group form-group">
+                          <div class="controls">
+                              <label>Adresse Email :</label>
+                              <input type="email" class="form-control" id="email" required data-validation-required-message="Saisissez votre email s'il vous plait.">
+                          </div>
+                      </div>
+                      <div class="control-group form-group">
+                          <div class="controls">
+                              <label>Votre message :</label>
+                              <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Saississez votre message" maxlength="999" style="resize:none"></textarea>
+                          </div>
+                      </div>
+                      <div id="success"></div>
+                      
+                      <button type="submit" class="btn btn-primary">Envoyer</button>
+                  </form>
+              </div>
+  			</div>-->
+          </div>
+          
+        </section>
+   
+        <!-- jQuery -->
+        <script src="vendor/jquery/jquery.js"></script>
+    
+        <!-- Bootstrap Core JavaScript -->
+        <script src="vendor/bootstrap/js/bootstrap.js"></script>
+    
+        <!-- Plugin JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.js"></script>
+        <script src="vendor/scrollreveal/scrollreveal.js"></script>
+        <script src="vendor/magnific-popup/jquery.magnific-popup.js"></script>
+    
+        <!-- Theme JavaScript -->
+        <script src="js/creative.js"></script>
+ 	<p>
+    Dernière mise à jour le : 18/02/2017
+    </p>
+    </body>
+    
+    </html>
