@@ -24,47 +24,46 @@
         <!-- Theme CSS -->
         <link href="css/creative.css" rel="stylesheet">
         <script language="javascript">
-		var currentPage = 1;
-		var nbPage = 3;
-		function switchTo(cible){
-			document.getElementById('page'+currentPage.toString()).style.display = 'none';
-			document.getElementById('bp'+currentPage.toString()).className = '';
-			
-			document.getElementById('page'+cible.toString()).style.display = 'block';
-			document.getElementById('bp'+cible.toString()).className = 'active';
-			
-			currentPage = cible;
-		}
-		
-		function switchPage(type){
-			
-			document.getElementById('page'+currentPage.toString()).style.display = 'none';
-			document.getElementById('bp'+currentPage.toString()).className = '';
-			
-			
-			
-			if(currentPage == 1 	 && type == -1){
-				currentPage = nbPage;
+			var currentPage = 1;
+			var nbPage = 4;
+			function switchTo(cible){
+				document.getElementById('page'+currentPage.toString()).style.display = 'none';
+				document.getElementById('bp'+currentPage.toString()).className = '';
+
+				document.getElementById('page'+cible.toString()).style.display = 'block';
+				document.getElementById('bp'+cible.toString()).className = 'active';
+
+				currentPage = cible;
 			}
-			else{
-				if(currentPage >= 1 && currentPage < nbPage && type == 1){
-					currentPage++;
+
+			function switchPage(type){
+
+				document.getElementById('page'+currentPage.toString()).style.display = 'none';
+				document.getElementById('bp'+currentPage.toString()).className = '';
+
+
+
+				if(currentPage == 1 	 && type == -1){
+					currentPage = nbPage;
 				}
 				else{
-					if(currentPage >= nbPage && type == 1){
-						currentPage = 1;
+					if(currentPage >= 1 && currentPage < nbPage && type == 1){
+						currentPage++;
 					}
 					else{
-						if(currentPage <= nbPage && currentPage > 1 && type == -1){
-							currentPage--;
+						if(currentPage >= nbPage && type == 1){
+							currentPage = 1;
+						}
+						else{
+							if(currentPage <= nbPage && currentPage > 1 && type == -1){
+								currentPage--;
+							}
 						}
 					}
 				}
+				document.getElementById('page'+currentPage.toString()).style.display = 'block';
+				document.getElementById('bp'+currentPage.toString()).className = 'active';
 			}
-			document.getElementById('page'+currentPage.toString()).style.display = 'block';
-			document.getElementById('bp'+currentPage.toString()).className = 'active';
-		}
-			
         </script>
     </head>
     
@@ -455,30 +454,31 @@
               <!-- Project 9 Php-->
               <div class="row">
                   <div class="col-md-7">
-                          <img class="img-responsive" src="img/portfolio/fullsize/workinprogress.jpg" alt="work in progress">
+                          <img class="img-responsive" src="img/portfolio/fullsize/skoll.png" alt="work in progress">
                   </div>
                 <div class="col-md-5">
                       <h3>Site E-Commerce</h3>
-                  <h4>Langages : HTML 5 / CSS 3 / JavaScript / PhP / MySQL / Bootstrap<br>R&ocirc;le : Designer / Developpeur</h4>
-                    <p>Dans le cadre du cours de PHP nous devons réaliser en groupe un site complet utilisant toutes les connaissances Web accumulé jusqu'à présent.
-                  <br>Le projet débutera fin Février.</p>
+                  <h4>Langages : HTML 5 / CSS 3 / JavaScript / PhP / MySQL / Bootstrap<br>R&ocirc;le : Designer / D&eacute;veloppeur</h4>
+                    <p>Dans le cadre du cours de PHP nous avons réalisé en groupe un site du E-Commerce complet, utilisant toutes les connaissances Web accumulé jusqu'à présent.<br>
+                    On retrouve donc un syst&egrave;me de cr&eacute;ation de compte et de login, un panier, un historique de commande, un filtre pour le catalogue du site...</p>
                     <i class="fa fa-3x fa-github sr-icons text-primary" aria-hidden="true" onClick="window.open('https://github.com/art35rennes/Projet-PhP', '_blank')"></i>
-                    <!--i class="fa fa-3x fa-youtube-play sr-icons text-primary" aria-hidden="true" onClick="window.open('https://github.com/art35rennes/Projet-Robot-Pompier', '_blank')"></i-->
+                   <i class="fa fa-3x fa-file-text sr-icons text-primary" aria-hidden="true" onClick="window.open('https://docs.google.com/document/d/1L8jii3sQZoKnjUxRmb7hP2x7TUdd2_xuPffGMuNPDIM/edit?usp=sharing', '_blank')"></i>
                   </div>
               </div>
               <hr>
                <!-- Project 10 Mario -->
               <div class="row">
                   <div class="col-md-7">
-                          <img class="img-responsive" src="img/portfolio/fullsize/workinprogress.jpg" alt="work in progress">
+                          <img class="img-responsive" src="img/portfolio/fullsize/ProjetM.png" alt="Projet Mario">
                   </div>
                 <div class="col-md-5">
                       <h3>Jeu de plateforme</h3>
-                  <h4>Langage : C++<br>R&ocirc;le : Designer / Developpeur</h4>
-                    <p>Dans le cadre du cours de C++ je doit réaliser un jeu de plateforme type Mario.<br> En plus d'intégrer des ennemis et éléments de décors dynamique je compte ajouter un mode coop/speed run à mon jeu.
-                  <br>Le projet débutera début Mars</p>
-                    <!--i class="fa fa-3x fa-github sr-icons text-primary" aria-hidden="true" onClick="window.open('https://github.com/art35rennes/Echec-realite-augmentee-', '_blank')"></i-->
-                    <!--i class="fa fa-3x fa-youtube-play sr-icons text-primary" aria-hidden="true" onClick="window.open('https://github.com/art35rennes/Projet-Robot-Pompier', '_blank')"></i-->
+                  <h4>Langage : C++<br>R&ocirc;le : Designer / D&eacute;veloppeur</h4>
+                    <p>Dans le cadre du cours de C++ je doit réaliser un jeu de plateforme type Mario.<br>Je sujet exige que la personne puisse sauter par-dessus un &eacute;l&eacute;ment de d&eacute;cor et atteindre un point d'arriver qui termine la partie. Un syst&egrave;me de 'scrolling' pour la vue doit aussi &ecirc;tre impl&eacute;ment&eacute;.<br>
+                    En plus de cela j'ai ajouté des éléments de décors dynamique, des ennemies, une lecture de fichier pour pouvoir ajouter des niveaux de mani&eacute;r&eacute; infini ou encore un mode coop&eacute;ration. 
+                  <br>D'autre fonctionnalit&eacute;s sont en d&eacute;veloppement.</p>
+                    <i class="fa fa-3x fa-github sr-icons text-primary" aria-hidden="true" onClick="window.open('https://github.com/art35rennes/Echec-realite-augmentee-', '_blank')"></i>
+                    <i class="fa fa-3x fa-youtube-play sr-icons text-primary" aria-hidden="true" onClick="window.open('https://youtu.be/ZRIOZ1TaNIs', '_blank')"></i>
                   </div>
               </div>
               <hr>
@@ -489,7 +489,7 @@
                   </div>
                 <div class="col-md-5">
                       <h3>Robot Arduino</h3>
-                  <h4>Langage : Arduino<br>R&ocirc;le : Developpeur</h4>
+                  <h4>Langage : Arduino<br>R&ocirc;le : D&eacute;veloppeur</h4>
                     <p>A la suite du cours de Science de l'l'Ingénieur, j'ai eu l'occasion de programmer different robot basé sur des cartes arduino.
                   <br>- A gauche, un robot télécommandé via bluetooth qui peut se déplacer en crabe.<br>- Au milieu, un robot motorisé  équipé de chenille.<br>- A droite, un robot suiveur de ligne.</p>
                     <!--i class="fa fa-3x fa-github sr-icons text-primary" aria-hidden="true" onClick="window.open('https://github.com/art35rennes/Echec-realite-augmentee-', '_blank')"></i-->
@@ -504,7 +504,7 @@
                   </div>
                 <div class="col-md-5">
                       <h3>Portfolio</h3>
-                  <h4>Langages : HTML5 / CSS3 / JavaScript / Bootstrap / JQuery<br>R&ocirc;le : Developpeur</h4>
+                  <h4>Langages : HTML5 / CSS3 / JavaScript / Bootstrap / JQuery<br>R&ocirc;le : D&eacute;veloppeur</h4>
                     <p>Afin de m'aider dans ma recherche de stage et alternance mais aussi de mettre en avant mes comp&eacute;tences techniques, j'ai d&eacute;cid&eacute; de r&eacute;aliser un PortFolio.
                   <br>Il a donc fallu g&eacute;rer la mise en ligne chez un h&eacute;bergeur ainsi que le lien avec mon nom de domaine internet, arthursicard.fr.</p>
                     <i class="fa fa-3x fa-github sr-icons text-primary" aria-hidden="true" onClick="window.open('https://github.com/art35rennes/Portfolio', '_blank')"></i>
@@ -514,6 +514,25 @@
               
             </div>
             
+            <!-- Project Page 4-->
+            <div class="container" id="page4">
+      
+              <!-- Project 13 CirPoll-->
+              <div class="row">
+                  <div class="col-md-7">
+                          <img class="img-responsive" src="img/portfolio/fullsize/workinprogress.jpg" alt="work in progress">
+                  </div>
+                <div class="col-md-5">
+                      <h3>Projet CirPoll</h3>
+                  <h4>Langages : HTML 5 / CSS 3 / JavaScript / PhP / MySQL / Bootstrap / Ajax<br>R&ocirc;le : D&eacute;veloppeur</h4>
+                    <p>Dans le cadre du cours d'Ajax, j'ai r&eacute;alis&eacute; un site de sondage en ligne qui inclus un chat.
+                  <br>Le projet est bas&eacute; sur les m&eacute;thodes REST et Ajax notamment.</p>
+                    <i class="fa fa-3x fa-github sr-icons text-primary" aria-hidden="true" onClick="window.open('https://github.com/art35rennes/CirPoll', '_blank')"></i>
+                  </div>
+              </div>
+              <hr>
+              
+            </div>
             <!-- Pagination -->
         <div class="row text-center">
             <div class="col-lg-12">
@@ -529,6 +548,9 @@
                     </li>
                     <li id="bp3">
                         <a onClick="switchTo(3)" href="#portfolio" class="page-scroll">3</a>
+                    </li>
+                    <li id="bp4">
+                        <a onClick="switchTo(4)" href="#portfolio" class="page-scroll">4</a>
                     </li>
                     <li>
                         <a onClick="switchPage(1)" href="#portfolio" class="page-scroll">&raquo;</a>
@@ -657,7 +679,34 @@
                         </div>
                       </div>
                     </li>
-                </ul>
+                	<li>
+                      <div class="timeline-badge success"><i class="fa fa-child" aria-hidden="true"></i></div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <h4 class="timeline-title">B&eacute;n&eacute;vole Urban Trail Rennes</h4>
+                          <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2 Avril 2017</small></p>
+                        </div>
+                        <div class="timeline-body">
+                          <p>- Captation de l'&eacute;v&eacute;nement pour la chaine de t&eacute;l&eacute;vison TV Rennes.</p>
+                          <p>- Photographe sur la ligne d'arriv&eacute;e de la course.<br>
+                          </p>
+                        </div>
+                      </div>
+                    </li>
+         			<li class="timeline-inverted">
+                      <div class="timeline-badge info"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <h4 class="timeline-title">Thales Systeme UnderWater</h4>
+                          <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> Octobre 2017 - Ao&ucirc;t 2018</small></p>
+                        </div>
+                        <div class="timeline-body">
+                          <p>Alternance.</p>
+                          <p>- D&eacute;ploiement d’une plateforme r&eacute;seau pour l’int&eacute;gration d’un syst&egrave;me de Guerre des Mines.</p>
+                        </div>
+                      </div>
+                    </li>
+            	</ul>
             </div>
         </section>
          
@@ -711,7 +760,7 @@
             <div class="container">
 	            <h2 id="h2Form">Pour me contacter : </h2>
                 <h2 class="featurette-heading" style="color:white">arthur.sicard@outlook.fr</h2>
-				<label>Dernière mise à jour le : 07/03/2017</label>
+				<label>Dernière mise à jour le : 06/04/2017</label>
             <!-- Contact Form -->
             <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
             

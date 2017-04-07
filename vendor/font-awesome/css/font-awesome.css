@@ -1,9 +1,12 @@
  /*Custom fa*/
 
-.fa-github, .fa-youtube-play, .fa-desktop{
+.fa-github, .fa-youtube-play, .fa-desktop, .fa-file-text{
 	margin-right: 10px;
 	margin-left: 10px;
 	cursor:pointer;
+}
+.fa-file-text:hover{
+	color:#0048B7;
 }
 .fa-desktop:hover {
 	color:#0070B7;
